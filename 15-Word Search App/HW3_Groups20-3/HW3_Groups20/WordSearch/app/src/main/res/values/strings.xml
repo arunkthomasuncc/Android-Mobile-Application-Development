@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WordSearch</string>
+    <string name="AddWords">Add Words To Search:</string>
+    <string name="MatchCases">Match Cases</string>
+    <string name="Search">Search</string>
+    <string name="Finish">Finish</string>
+</resources>

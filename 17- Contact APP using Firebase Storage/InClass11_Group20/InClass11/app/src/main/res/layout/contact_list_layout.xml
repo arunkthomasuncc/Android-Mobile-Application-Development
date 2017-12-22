@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="5dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:padding="10dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageViewContactPhoto"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/add_photo" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_toEndOf="@+id/imageViewContactPhoto"
+        android:text="@string/name" />
+
+    <TextView
+        android:id="@+id/textViewPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewName"
+        android:layout_below="@+id/textViewName"
+        android:layout_marginTop="18dp"
+        android:text="@string/phone" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewPhone"
+        android:layout_below="@+id/textViewPhone"
+        android:layout_marginTop="18dp"
+        android:text="@string/email" />
+
+    <TextView
+        android:id="@+id/textViewNameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_toEndOf="@+id/textViewName"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewPhoneValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textViewNameValue"
+        android:layout_alignTop="@+id/textViewPhone"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textViewEmailValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewEmail"
+        android:layout_toRightOf="@+id/textViewEmail"
+        android:layout_marginStart="10dp"
+        android:text="TextView" />
+
+    <ImageButton
+        android:id="@+id/imageButtoEditContactProfile"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/textViewPhoneValue"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/edit_profile" />
+
+    <ImageButton
+        android:id="@+id/imageButtonDeleteContactProfile"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/imageButtoEditContactProfile"
+        android:layout_below="@+id/textViewPhoneValue"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/delete" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

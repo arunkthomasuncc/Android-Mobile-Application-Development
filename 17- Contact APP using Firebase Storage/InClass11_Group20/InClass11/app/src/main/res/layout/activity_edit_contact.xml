@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.roncherian.inclass11.EditContactActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewEditContactProfilePic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/buttonContactEditSave"
+        app:srcCompat="@drawable/add_photo" />
+
+    <EditText
+        android:id="@+id/editTextContactEditFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/imageViewEditContactProfilePic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp" />
+
+    <EditText
+        android:id="@+id/editTextContactEditLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/imageViewEditContactProfilePic"
+        android:layout_alignStart="@+id/editTextContactEditFirstName"
+        android:layout_marginTop="86dp" />
+
+    <EditText
+        android:id="@+id/editTextContactEditEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextContactEditLastName"
+        android:layout_below="@+id/editTextContactEditLastName"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextContacEditPthone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextContactEditEmail"
+        android:layout_below="@+id/editTextContactEditEmail"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/buttonContactEditSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="58dp"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/buttonContactEditCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonContactEditSave"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="67dp"
+        android:text="Cancel" />
+</RelativeLayout>

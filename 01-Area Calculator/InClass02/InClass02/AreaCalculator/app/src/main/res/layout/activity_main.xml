@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.arun.areacalculator.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Length1"
+            android:textSize="24sp"
+            android:layout_alignBaseline="@+id/Length1"
+            android:layout_alignBottom="@+id/Length1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/Length1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/shapeTextView"
+            android:layout_alignStart="@+id/shapeTextView" />
+
+        <TextView
+            android:id="@+id/length2TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Length1"
+            android:layout_marginTop="29dp"
+            android:text="@string/Length2"
+            android:textSize="24sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/length2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_alignBaseline="@+id/length2TextView"
+            android:layout_alignBottom="@+id/length2TextView"
+            android:layout_alignLeft="@+id/Length1"
+            android:layout_alignStart="@+id/Length1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout"
+            android:layout_marginTop="13dp"
+            android:layout_below="@+id/length2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:id="@+id/triangleImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/squareImageView"
+                android:layout_toLeftOf="@+id/shapeTextView"
+                android:layout_toStartOf="@+id/shapeTextView"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/triangle" />
+
+            <ImageView
+                android:id="@+id/squareImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/circleImageView"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/square" />
+
+            <ImageView
+                android:id="@+id/circleImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/length2"
+                android:layout_alignRight="@+id/length2"
+                android:layout_below="@+id/length2"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/circle" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/shapeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:gravity="center_horizontal"
+            android:hint="@string/selectShape"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/CalculateButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/calculate"
+            android:layout_below="@+id/shapeTextView"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/areaText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CalculateButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/clear"
+            android:layout_below="@+id/areaText"
+            android:layout_alignLeft="@+id/CalculateButton"
+            android:layout_alignStart="@+id/CalculateButton"
+            android:layout_marginTop="24dp" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

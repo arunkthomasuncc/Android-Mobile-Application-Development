@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Trivia</string>
+    <string name="Quit">Quit</string>
+    <string name="Next">Next</string>
+    <string name="TriviaStatus">Trivia Stats</string>
+    <string name="CorrectAnswers">Correct Answers</string>
+    <string name="Zero">0</string>
+    <string name="TryAgain">Try again and see if you can get all the correct answers!</string>
+    <string name="Try">Try Again</string>
+</resources>

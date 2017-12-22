@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/action_sortbyrating"
+
+        android:title="Sort by Rating"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_sortbypopularity"
+
+        android:title="Sort By Popularity"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_showfavorites"
+
+        android:title="Show Favorites"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_quit"
+
+        android:title="Quit"
+        app:showAsAction="never" />
+
+</menu>

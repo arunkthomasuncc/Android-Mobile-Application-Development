@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.roncherian.inclass11.ContactActivity">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="23dp"
+        android:text="First Last"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewPosts"
+        android:layout_width="340dp"
+        android:layout_height="400dp"
+        android:layout_alignStart="@+id/textViewName"
+        android:layout_below="@+id/textViewName"
+        android:layout_marginTop="12dp" />
+
+    <ImageButton
+        android:id="@+id/imageButtonEditMyProfile"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/textViewName"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/textViewName"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/edit_profile" />
+
+    <ImageButton
+        android:id="@+id/imageButtonAddContact"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/imageButtonEditMyProfile"
+        android:layout_alignEnd="@+id/recyclerViewPosts"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/add" />
+</RelativeLayout>

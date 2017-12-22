@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.arun.homework07v1.UserEditProfileActivity">
+
+
+    <EditText
+        android:id="@+id/editTextFirstNameProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="19dp"
+        android:layout_marginTop="47dp"
+        android:ems="10"
+        android:hint="Firstname"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextLastnameProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextFirstNameProfile"
+        android:layout_below="@+id/editTextFirstNameProfile"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Lastname"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textViewEmailProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextLastnameProfile"
+        android:layout_below="@+id/editTextLastnameProfile"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextAgeProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewEmailProfile"
+        android:layout_below="@+id/textViewEmailProfile"
+        android:layout_marginTop="27dp"
+        android:clickable="true"
+        android:editable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Age"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/buttonSubmitProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextAgeProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:text="Save" />
+
+    <TextView
+        android:id="@+id/textViewFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextFirstNameProfile"
+        android:layout_alignBottom="@+id/editTextFirstNameProfile"
+        android:layout_marginEnd="16dp"
+        android:layout_toStartOf="@+id/editTextFirstNameProfile"
+        android:text="First Name" />
+
+    <TextView
+        android:id="@+id/textViewLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewEmailProfile"
+        android:layout_alignEnd="@+id/textViewFirstName"
+        android:layout_marginBottom="11dp"
+        android:text="Last Name" />
+
+    <TextView
+        android:id="@+id/textViewem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextAgeProfile"
+        android:layout_alignEnd="@+id/textViewLastName"
+        android:text="Email" />
+
+    <TextView
+        android:id="@+id/textViewAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextAgeProfile"
+        android:layout_alignBottom="@+id/editTextAgeProfile"
+        android:layout_alignEnd="@+id/textViewem"
+        android:text="Date of Birth" />
+
+</RelativeLayout>
+

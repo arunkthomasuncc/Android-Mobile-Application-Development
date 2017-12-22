@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.arun.group20inclass04.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/Name"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewDept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewName"
+        android:layout_below="@+id/textViewName"
+        android:layout_marginTop="28dp"
+        android:text="@string/Dept"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewDept"
+        android:layout_below="@+id/textViewDept"
+        android:layout_marginTop="28dp"
+        android:text="@string/Age"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewZIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textViewAge"
+        android:layout_below="@+id/textViewAge"
+        android:layout_marginTop="36dp"
+        android:text="@string/ZIP"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignBaseline="@+id/textViewName"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextDept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextName"
+        android:layout_below="@+id/editTextName"
+        android:layout_alignBaseline="@+id/textViewDept"
+        android:ems="10"
+        android:hint="Dept"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewAge"
+        android:layout_alignStart="@+id/editTextDept"
+        android:layout_alignTop="@+id/textViewAge"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextZIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewZIP"
+        android:layout_alignEnd="@+id/editTextAge"
+        android:layout_alignTop="@+id/textViewZIP"
+        android:ems="10"
+        android:hint="ZIP"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textViewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewZIP"
+        android:layout_centerVertical="true"
+        android:text="@string/Password"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonThread"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="@string/ThreadButton"
+        android:layout_below="@+id/textViewPassword"
+        android:layout_alignStart="@+id/textViewZIP"
+        android:layout_alignEnd="@+id/editTextZIP" />
+
+    <Button
+        android:id="@+id/buttonAsync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/buttonThread"
+        android:layout_below="@+id/buttonThread"
+        android:layout_alignStart="@+id/textViewZIP"
+        android:text="@string/AsyncButton" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textViewPassword"
+        android:layout_marginBottom="33dp"
+        android:text="@string/Clear" />
+
+    <Button
+        android:id="@+id/buttonClose"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonClear"
+        android:layout_alignEnd="@+id/editTextZIP"
+        android:layout_marginBottom="33dp"
+        android:text="@string/Close" />
+
+    <TextView
+        android:id="@+id/textViewNewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonAsync"
+       android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        tools:text="newPassword" />
+</RelativeLayout>
+
+

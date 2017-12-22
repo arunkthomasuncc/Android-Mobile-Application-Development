@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">InClass08Recipes</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_recipes">No Recipes Found</string>
+    <string name="loading">Loading...</string>
+</resources>

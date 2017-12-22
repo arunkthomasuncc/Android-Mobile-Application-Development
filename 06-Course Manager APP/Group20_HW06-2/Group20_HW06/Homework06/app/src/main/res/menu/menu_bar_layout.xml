@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.test.MainActivity" >
+
+    <item
+        android:id="@+id/action_home"
+        android:orderInCategory="97"
+        android:title="Home"/>
+        <!--android:icon="@drawable/ic_launcher"-->
+
+
+    <item
+        android:id="@+id/action_instructor"
+        android:orderInCategory="98"
+        android:title="Instructors"/>
+<!--
+        android:icon="@drawable/ic_launcher"
+-->
+
+    <item
+        android:id="@+id/action_add_instructor"
+        android:orderInCategory="99"
+        android:title="Add Instructor"/>
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="Logout"/>
+
+    <item
+        android:id="@+id/action_exit"
+        android:orderInCategory="101"
+        android:title="Exit"/>
+
+</menu>

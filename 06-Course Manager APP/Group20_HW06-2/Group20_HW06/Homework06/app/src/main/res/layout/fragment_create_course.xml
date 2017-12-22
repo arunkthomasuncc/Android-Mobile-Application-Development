@@ -1,0 +1,202 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.roncherian.homework06.CreateCourseFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Title"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextTitleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Title"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewInstructorList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/textViewSchedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/recyclerViewInstructorList"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="5dp"
+            android:text="Schedule"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textViewTime"
+            android:layout_below="@+id/textViewSchedule"
+            android:layout_marginStart="10dp"
+            android:text="Day" />
+
+        <Spinner
+            android:id="@+id/spinnerDay"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textViewDay"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="22dp" />
+
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textViewDay"
+            android:layout_marginTop="40dp"
+            android:text="Time"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/editTextHours"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/textViewTime"
+            android:layout_toEndOf="@+id/textViewSchedule"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextMinutes"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/editTextHours"
+            android:layout_alignBottom="@+id/textViewColon"
+            android:layout_toEndOf="@+id/textViewColon"
+            android:ems="10"
+            android:inputType="number" />
+
+        <Spinner
+            android:id="@+id/spinnerAmPm"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/editTextMinutes"
+            android:layout_toEndOf="@+id/editTextMinutes" />
+
+        <TextView
+            android:id="@+id/textViewColon"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/editTextHours"
+            android:layout_toEndOf="@+id/editTextHours"
+            android:text=":"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textViewCreditHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textViewTime"
+            android:layout_below="@+id/editTextHours"
+            android:layout_marginTop="31dp"
+            android:text="Credit Hours"
+            android:layout_marginStart="5dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textViewCreditHours"
+            android:layout_toEndOf="@+id/textViewColon"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewSemester"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textViewCreditHours"
+            android:layout_below="@+id/radioGroup"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="5dp"
+            android:text="Semester"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerSemester"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/spinnerDay"
+            android:layout_alignTop="@+id/textViewSemester" />
+
+        <Button
+            android:id="@+id/buttonResetCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:layout_toEndOf="@+id/textViewSemester"
+            android:text="Reset" />
+
+        <Button
+            android:id="@+id/buttonCreateCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/buttonResetCourse"
+            android:layout_alignBottom="@+id/buttonResetCourse"
+            android:layout_marginStart="31dp"
+            android:layout_toEndOf="@+id/editTextMinutes"
+            android:text="Create" />
+
+    </RelativeLayout>
+
+</FrameLayout>

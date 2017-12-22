@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.arun.moviedb.MainActivity"
+    android:focusableInTouchMode="true">
+
+
+    <TextView
+        android:id="@+id/textViewSearchMovies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editTextSearchMovie"
+        android:layout_marginTop="32dp"
+        android:text="Search Movies"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextSearchMovie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSearchMovies"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Enter Movie"
+        android:inputType="textPersonName"
+
+        />
+
+    <Button
+        android:id="@+id/buttonSearchMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextSearchMovie"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="Search"
+        android:onClick="search"
+        />
+
+    <TextView
+        android:id="@+id/textViewResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewSearchMovies"
+        android:layout_below="@+id/buttonSearchMovie"
+        android:layout_marginTop="22dp"
+        android:text="Results"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/textViewResults">
+
+        <ListView
+            android:id="@+id/listviewResults"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</RelativeLayout>

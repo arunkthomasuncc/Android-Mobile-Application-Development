@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.arun.trivia.StatsActivity">
+
+
+    <TextView
+        android:id="@+id/textViewTriviaStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="@string/TriviaStatus"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewCorrectAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewTriviaStatus"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/CorrectAnswers"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewCorrectAns"
+        android:layout_below="@+id/textViewCorrectAns"
+        android:layout_marginTop="26dp"
+        android:text="@string/Zero"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBarPercentage"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewPercentage"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textViewTryAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewPercentage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:text="@string/TryAgain"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonQuitFromStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textViewPercentage"
+        android:layout_marginBottom="35dp"
+        android:text="@string/Quit" />
+
+    <Button
+        android:id="@+id/buttonTryAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textViewTryAgain"
+        android:layout_alignTop="@+id/buttonQuitFromStats"
+        android:layout_marginEnd="18dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="@string/Try" />
+</RelativeLayout>

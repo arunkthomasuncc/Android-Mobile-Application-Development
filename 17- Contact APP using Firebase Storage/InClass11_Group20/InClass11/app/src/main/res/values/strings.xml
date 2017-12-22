@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">InClass11</string>
+
+    <string name="sign_in">Login</string>
+    <string name="sign_up">Not registered? Sign Up</string>
+    <string name="register">Sign Up</string>
+    <string name="cancel">cancel</string>
+    <string name="last_name">Last Name</string>
+    <string name="firts_name">First Name</string>
+    <string name="email">Email: </string>
+    <string name="dob">DOB (mm/dd/yyyy)</string>
+    <string name="password">password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="posts">Posts</string>
+    <string name="write_a_post">Write a post</string>
+    <string name="friends">Freinds</string>
+    <string name="add_new_friend">Add New Friend</string>
+    <string name="request_pending">Request Pending</string>
+    <string name="title_activity_contact">ContactActivity</string>
+    <string name="name">Name: </string>
+    <string name="phone">Phone: </string>
+    <string name="create">Create</string>
+
+</resources>

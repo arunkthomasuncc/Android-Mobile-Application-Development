@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Homework2</string>
+    <string name="CreateNew">Create New</string>
+    <string name="EditContact">Edit Contact</string>
+    <string name="DeleteContact">Delete Contact</string>
+    <string name="DisplayContact">Display Contact</string>
+    <string name="Finish">Finish</string>
+</resources>

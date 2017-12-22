@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.roncherian.inclass11.SignUpActivity">
+
+    <ImageView
+        android:id="@+id/imageViewContactProfilePic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/buttonContactCreate"
+        app:srcCompat="@drawable/add_photo" />
+
+    <EditText
+        android:id="@+id/editTextContactFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/imageViewContactProfilePic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp" />
+
+    <EditText
+        android:id="@+id/editTextContactLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/imageViewContactProfilePic"
+        android:layout_alignStart="@+id/editTextContactFirstName"
+        android:layout_marginTop="86dp" />
+
+    <EditText
+        android:id="@+id/editTextContactEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextContactLastName"
+        android:layout_below="@+id/editTextContactLastName"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextContacthone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editTextContactEmail"
+        android:layout_below="@+id/editTextContactEmail"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Password(min 8 characters)"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/buttonContactCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="58dp"
+        android:text="Signup" />
+
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextContacthone"
+        android:layout_below="@+id/editTextContacthone"
+        android:ems="10"
+        android:hint="Repeat Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/buttonSignupCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonContactCreate"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="67dp"
+        android:text="Cancel" />
+
+</RelativeLayout>

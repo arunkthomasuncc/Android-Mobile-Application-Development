@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">InClass03Group20</string>
+    <string name="DeptSIS">SIS</string>
+    <string name="DeptCS">CS</string>
+    <string name="DeptBIO">BIO</string>
+    <string name="SubmittButton">Submit</string>
+    <string name="SelectAvatar">Select Your Avatar</string>
+    <string name="Department">Department:</string>
+    <string name="HappyMood">Your current mood: Happy</string>
+    <string name="AngryMood">Your current mood: Angry</string>
+    <string name="SadMood">Your current mood: Sad</string>
+    <string name="AwesomMood">Your current mood: Awesome</string>
+    <string name="displayName">Name:</string>
+    <string name="displayEmail">Email:</string>
+    <string name="displayDepartment">Department:</string>
+    <string name="displayHappy">I am Happy!</string>
+    <string name="displaySad">I am Sad!</string>
+    <string name="displayAngry">I am Angry!</string>
+    <string name="displayAwesome">I am Awesome!</string>
+</resources>

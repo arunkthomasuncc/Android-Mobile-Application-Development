@@ -1,0 +1,13 @@
+<menu     xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Settings, should always be in the overflow -->
+
+
+    <item
+        android:id="@+id/homeItem"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/quitItem"
+        android:title="@string/quit"/>
+</menu>

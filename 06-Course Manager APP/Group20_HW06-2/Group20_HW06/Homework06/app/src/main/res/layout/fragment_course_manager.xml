@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.roncherian.homework06.CourseManagerFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="34dp"
+            android:text="Your Courses"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imageButtonAddCourse"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="48dp"
+            android:layout_marginTop="19dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/add" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewCourseList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageButtonAddCourse"
+            android:layout_marginTop="39dp" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

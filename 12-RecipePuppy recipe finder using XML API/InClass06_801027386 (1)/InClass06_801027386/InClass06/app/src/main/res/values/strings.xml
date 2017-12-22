@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Receipes</string>
+    <string name="Search">Search</string>
+    <string name="Dish">Dish</string>
+    <string name="AddIngredients">Add Ingredients</string>
+</resources>
